@@ -7,7 +7,7 @@ import { MainOptions } from "lib/core";
  */
 export const getTypeDefinitionPath = (
   file: string,
-  options: MainOptions
+  options?: MainOptions
 ): string => {
   if (options.outDir) {
     let arr = file.split("/");
