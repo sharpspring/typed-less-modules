@@ -130,22 +130,6 @@ export class LessAliasesPlugin {
           callback
         );
       }
-
-      loadFileSync(
-        filename: string,
-        currentDirectory: string,
-        options: Record<string, unknown>,
-        enviroment: unknown,
-        callback: Function
-      ) {
-        return super.loadFileSync(
-          resolveFile(filename),
-          currentDirectory,
-          options,
-          enviroment,
-          callback
-        );
-      }
     }
 
     pluginManager.addFileManager(new AliasePlugin());
