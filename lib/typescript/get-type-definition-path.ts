@@ -10,9 +10,7 @@ export const getTypeDefinitionPath = (
   options?: MainOptions
 ): string => {
   if (options && options.outDir) {
-    let arr = file.split("/");
-    let declarationFile = arr[arr.length - 1];
-    return `${options.outDir}/${declarationFile}.d.ts`;
+    return options.outDir;
   } else {
     return `${file}.d.ts`;
   }
