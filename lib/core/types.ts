@@ -3,6 +3,7 @@ import { ExportType, QuoteType, LogLevel } from "../typescript";
 
 export interface MainOptions extends Options {
   pattern?: string;
+  outDir?: string;
   config?: string;
   lessRenderOptions?: Less.Options;
   ignore: string[];

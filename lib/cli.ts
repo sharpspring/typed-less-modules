@@ -55,6 +55,12 @@ const { _: patterns, ...rest } = yargs
   )
   .example("$0 src/**/*.less --logLevel error", "Output only errors")
 
+  .option("outDir", {
+    string: true,
+    alias: "o",
+    default: configFilePathDefault,
+    describe: "The output path for the declaraction file."
+  })
   .option("config", {
     string: true,
     alias: "c",
